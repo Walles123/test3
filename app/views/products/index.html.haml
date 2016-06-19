@@ -1,0 +1,50 @@
+%body.off-canvas-wrap.inner-wrap
+  %nav.tab-bar.show-for-small
+    %section.left-small
+      %a.left-off-canvas-toggle.menu-icon
+        %span Website
+  %aside.left-off-canvas-menu
+    %ul.off-canvas-list
+      %li= link_to 'Option 1', '#'
+      %li= link_to 'Option 2', '#'
+      %li= link_to 'Option 3', '#'
+  %a.exit-off-canvas
+
+  .contain-to-grid
+    %nav.top-bar.hide-for-small{:'data-topbar' => ''}
+      %ul.title-area
+        %li.name
+          %h1= link_to 'Website', '/', title: 'Website'
+        %li.toggle-topbar.menu-icon
+          %a{:title => "", :href => ""}
+            %span
+
+      %section.top-bar-section
+        %ul.right
+          %li.tagline This is a tagline
+          %li.divider.show-for-medium-and-up
+          %li.has-dropdown
+            %a{:title => "", :href => "/main"} Main
+            %ul.dropdown
+              %li
+                %label Products
+              %li= link_to 'Option 1', '#', title: ''
+              %li= link_to 'Option 2', '#', title: ''
+              %li= link_to 'Option 3', '#', title: ''
+              %li
+                %label Resources &amp; Info
+              %li= link_to 'Option 1', '#', title: ''
+              %li= link_to 'Option 2', '#', title: ''
+              %li= link_to 'Option 3', '#', title: ''
+              %li.divider
+              %li= link_to 'See all »', '#', title: ''
+          %li.has-dropdown
+            %a{:title => "", :href => "/secondary"} Secondary
+            %ul.dropdown
+              %li
+                %label Products
+              %li= link_to 'Option 1', '#', title: ''
+              %li= link_to 'Option 2', '#', title: ''
+              %li= link_to 'Option 3', '#', title: ''
+              %li.divider
+              %li= link_to 'See all »', '#', title: ''
